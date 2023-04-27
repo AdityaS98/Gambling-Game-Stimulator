@@ -32,18 +32,22 @@ public class GamblingGame {
         }
         if (winAmountBet > lossAmountBet) {
             winningday++;
-            System.out.println("Luckyday");
+
         } else {
             lossday++;
-            System.out.println("Losingday");
+
         }
-        System.out.println("Winning days in the month are " + winningday + "and these are the lucky days");
-        System.out.println("Losing days in the month are " + lossday + "and these are the losing days");
+        //To suggest whether player should play or not
+        if (winAmountBet > lossAmountBet) {
+            System.out.println("Player should continue playing");
+        } else {
+            System.out.println("Player should exit the game");
+
+
+        }
 
     }
-
 }
-
 
 
 
